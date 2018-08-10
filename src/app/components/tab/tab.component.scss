@@ -1,0 +1,21 @@
+.board {
+  .container {
+    margin: 10px;
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid gray;
+    &.gu-transit {
+      background-color: #0c5593;
+    }
+    .block-friends {
+      margin: 5px;
+      padding: 5px;
+      background-color: white;
+      .block-friend {
+      }
+    }
+  }
+}
+
+
+

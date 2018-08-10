@@ -1,0 +1,16 @@
+<div class="board" dragula="Users">
+
+  <div class="container" *ngFor="let user of users; let i = index">
+
+    <div class="user">
+      <i class="fa fa-plus" aria-hidden="true" (click)="showFriends(i)"></i>{{user.index}}: {{user.name}}
+    </div>
+    <div *ngIf="toggleFriend">
+      <div class="block-friends" *ngFor="let friend of users[i].friends">
+        <div class="block-friend">{{friend.id}}: {{friend.name}} : {{friend.age}}</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

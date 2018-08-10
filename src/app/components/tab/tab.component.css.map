@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,iBAAW;EACT,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,SAAS;EAC3B,MAAM,EAAE,cAAc;EACtB,4BAAa;IACX,gBAAgB,EAAE,OAAO;EAE3B,gCAAe;IACb,MAAM,EAAE,GAAG;IACX,OAAO,EAAE,GAAG;IACZ,gBAAgB,EAAE,KAAK",
+"sources": ["tab.component.scss"],
+"names": [],
+"file": "tab.component.css"
+}
