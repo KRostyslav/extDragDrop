@@ -26,8 +26,8 @@ export class TabComponent implements OnInit, OnDestroy {
 
     console.log(this.dragulaService);
     this.dragulaService.drag('Users')
-      .subscribe(( e ) => {
-        console.log('start :: ', e);
+      .subscribe(( el ) => {
+        console.log('start :: ', el);
       });
     this.dragulaService.dragend('Users')
       .subscribe(( e ) => {
@@ -36,8 +36,12 @@ export class TabComponent implements OnInit, OnDestroy {
 
     this.subs.add(this.dragulaService.drop()
       .subscribe(( {name, el, target, source, sibling} ) => {
-        // console.log('name, el, target, source, sibling', name, el, target, source, sibling);
-        console.log(el);
+        if (sibling === null) {
+          console.log(el.id, 'last element');
+        }
+        else {
+          console.log(name, el, target, source, sibling, el.id, ' before ', sibling.id);
+        }
       })
     );
   }

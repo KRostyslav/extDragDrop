@@ -59,6 +59,10 @@
           "configurations": {
             "production": {
               "browserTarget": "dragTab:build:production"
+            },
+            "hmr": {
+              "hmr": true,
+              "browserTarget": "angular-cli-project:build:hmr"
             }
           }
         },
