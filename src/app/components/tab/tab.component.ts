@@ -27,11 +27,11 @@ export class TabComponent implements OnInit, OnDestroy {
     console.log(this.dragulaService);
     this.dragulaService.drag('Users')
       .subscribe(( el ) => {
-        console.log('start :: ', el);
+        // console.log('start :: ', el);
       });
     this.dragulaService.dragend('Users')
       .subscribe(( e ) => {
-        console.log('end :: ', e);
+        // console.log('end :: ', e);
       });
 
     this.subs.add(this.dragulaService.drop()
@@ -56,10 +56,6 @@ export class TabComponent implements OnInit, OnDestroy {
       .subscribe(( response ) => {
         console.log('Res', response);
         this.users = response;
-        // let dragStart$ = this.dragulaService.drag('Users').pipe(mapTo(true));
-        // let dragEnd$ = this.dragulaService.dragend('Users').pipe(mapTo(false));
-        // let isDragging$ = merge(dragStart$, dragEnd$).pipe(startWith(false));
-        // console.log(dragStart$, dragEnd$, isDragging$)
       });
 
 
